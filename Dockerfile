@@ -24,7 +24,7 @@ RUN git clone --no-checkout -b master --depth 1 --single-branch https://github.c
     cd /var/www/spotweb && \
     git config core.symlinks false && \
     git checkout && \
-    git show && \
+    git show -q && \
     rm -rf .git && \
     chmod -R 775 /var/www/spotweb && \
     chown -R www-data:www-data /var/www/spotweb
